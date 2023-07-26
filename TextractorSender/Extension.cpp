@@ -32,15 +32,15 @@ bool ProcessSentence(std::wstring& sentence, SentenceInfo sentenceInfo)
 {
 	if (sentenceInfo["current select"] && sentenceInfo["process id"] != 0)
 	{
-		json data;
+//		json data;
+//		
+//		if (sentenceInfo["process id"])
+//		{
+//			data["process_path"] = ToString(ProcessIdToName((DWORD)sentenceInfo["process id"]));
+//		}
+//		data["sentence"] = ToString(sentence);
 
-		if (sentenceInfo["process id"])
-		{
-			data["process_path"] = ToString(ProcessIdToName((DWORD)sentenceInfo["process id"]));
-		}
-		data["sentence"] = ToString(sentence);
-
-		BroadcastData(data.dump());
+//		BroadcastData(data.dump());
 	}
 
 	return false;
