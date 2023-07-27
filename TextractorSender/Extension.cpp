@@ -41,6 +41,7 @@ bool ProcessSentence(std::wstring& sentence, SentenceInfo sentenceInfo)
 //		data["sentence"] = ToString(sentence);
 
 //		BroadcastData(data.dump());
+		BroadcastData(ToString(sentence));
 	}
 
 	return false;
